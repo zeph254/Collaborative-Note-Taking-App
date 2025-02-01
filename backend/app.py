@@ -15,7 +15,7 @@ CORS(app, resources={r"/*": {"origins": "http://localhost:5173"}}, supports_cred
 socketio = SocketIO(app, cors_allowed_origins="http://localhost:5173")
 
 # Setup Database and JWT Configuration
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://conta_db_user:PfapGTlri0X4bJvievBJ5JaXNZujAhlI@dpg-cueu8mt6l47c73f5okg0-a.oregon-postgres.render.com/conta_db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///app.db'
 migrate = Migrate(app, db)
 db.init_app(app)
 
