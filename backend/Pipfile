@@ -11,8 +11,8 @@ flask-jwt-extended = "*"
 werkzeug = "*"
 flask-cors = "*"
 flask-socketio = "*"
-psycopg2-binary = "*"
 gunicorn = "*"
+psycopg2-binary = "*"
 
 [dev-packages]
 
